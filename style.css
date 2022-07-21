@@ -1,0 +1,293 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+a{
+
+}
+ul{
+    list-style: none;
+}
+.page1{
+    background-image: url(img/header-bg.png);
+    height: 100vh;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.logo{
+    font-size: 4vmin;
+    font-weight: bold;
+    
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav-elmts li{
+    margin: 0 30px;
+}
+
+.nav-elmts{
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu{
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.nav-elmts li a{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.button{
+    background-color: #fb036b;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.body1{
+    padding-top: 190px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body1 h2{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.body1 h1{
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+    padding-top: 35px;
+}
+
+.line{
+    width: 150px;
+    height: 5px;
+    background-color: #fb036b;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.ctn{
+    background-color: #fb036b;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+/* page-2 */
+
+.page2{
+    background-color: white;
+    height: 710px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+}
+
+h1{
+    margin: 0;
+    font-size: 35px;
+    padding-bottom: 5px;
+}
+
+.imgs2{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+
+}
+.page2 p{
+    color: #7c7c7c;
+}
+
+.img1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img2{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* page-3 */
+
+.page3{
+    background-image: url(img/bg2.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.body3{
+    position: absolute;
+    top: 200px;
+    left: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body3 h1{
+    color: whitesmoke;
+}
+
+.body3 p{
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+/* page-4 */
+
+.page4{
+    background-color: white;
+    height: 710px;
+    margin: 80PX;
+}
+
+.body4{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: ;
+}
+
+.body4 h1{
+    color: rgb(35, 60, 108);
+}
+
+
+.imgs4{
+    position: relative;
+    width: 720px;
+    height: 580px;
+}
+
+#upper_left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#upper_right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#lower_left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#lower_right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.body4 p{
+    color: #7c7c7c;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.content4{
+    position: relative;
+}
+
+.content4 a{
+    position: absolute;
+    left: 140px;
+}
+
+/* footer */
+
+
+.footer{
+    background-color: #494872;
+    height: 150px;
+}
+
+.footer-body{
+    padding-top: 35px;
+    text-align: center;
+}
+
+.footer h3{
+    color: whitesmoke;
+    font-weight: lighter;
+}
+
+/* -----------------mobile--------------- */
+
+@media only screen and (max-width:850px){
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    } 
+    .nav-elmts{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content:center ;
+        background: #494872;
+        margin-top: -900px;
+    }
+    .mobile-menu{
+        background-color: black;
+    }
+    .nav-elmts li{
+        margin: 30px auto;
+    }
+}
